@@ -1,0 +1,60 @@
+{
+  "Home": {
+    "title": "Olá Mundo"
+  },
+  "aboutMe": {
+    "passionLabel": "Um pouco sobre mim:",
+    "resumeLabel": "Currículo",
+    "resume": "Ver PDF",
+    "skillsLabel": "Habilidades",
+    "skills": "Full Stack Development, Backend Development",
+    "passion": "Bem-vindo ao meu portfólio! Meu nome é Yuri Almeida e eu sou um desenvolvedor Full Stack autodidata morando em Toronto. Sou apaixonado por toda a gama do desenvolvimento web, mas particularmente fascinado pelo Backend. Gosto de enfrentar desafios com positividade e determinação.  Entre em contato!",
+    "name": "Yuri Almeida",
+    "location": "Toronto, Canadá"
+  },
+  "intro": {
+    "title": "Olá, me chamo Yuri Almeida!",
+    "subtitle": "Um desenvolvedor de software full-stack com base em Toronto, apaixonado por criar aplicativos web bonitos e funcionais.",
+    "switch": "Trocar para Português"
+  },
+  "techSkills": {
+    "languages": "Linguagens",
+    "technologies": "Outras Tecnologias"
+  },
+  "projects": {
+    "sectionTitle": " Meus Projetos",
+    "ownPortfolio": {
+      "smallTitle": "Web App",
+      "title": "Este Portfólio",
+      "description": "Um site para mostrar meus trabalhos e um pouco sobre mim. Construído com React, Next.js. Utiliza i18next para internacionalização e está hospedado na Vercel."
+    },
+    "Ymaa": {
+      "smallTitle": "Web App",
+      "title": "My Movies!",
+      "description": "Um aplicativo web para pesquisar filmes e séries de TV e salvá-los como favoritos. Construído com React, utilizando Codux IDE e acessando dados da API 'Movie Database'."
+    },
+    "FlaToronto": {
+      "smallTitle": "Web App",
+      "title": "Fla Toronto",
+      "description": "Um aplicativo web para os torcedores do Flamengo em Toronto. Construído com React -- em construção."
+    },
+    "eSports": {
+      "smallTitle": "Web App",
+      "title": "Find your DUO",
+      "description": "Lorem ipsum dolor amet you probably haven't heard of them bitters selvage listicle heirloom."
+    }
+  },
+  "ContactMe": {
+    "title": "Entre em contato",
+    "githubTitle": "Meu perfil no Github",
+    "emailTitle": "Envie-me um email",
+    "linkedinTitle": "Meu perfil no LinkedIn",
+    "namePlaceholder": "Nome",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Mensagem",
+    "submit": "Enviar",
+    "messageSent": "Mensagem enviada!",
+    "getBackSoon": "Entrarei em contato em breve.",
+    "error": "Por favor, preencha todos os campos."
+  }
+}
