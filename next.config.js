@@ -1,5 +1,17 @@
 const withNextIntl = require("next-intl/plugin")();
 
 module.exports = withNextIntl({
-  // Other Next.js configuration ...
+  images: {
+    domains: ['avatars.githubusercontent.com'],
+  },
+  //     remotePatterns: [
+  //       {
+  //         protocol: 'https',
+  //         hostname: 'avatars.githubusercontent.com', 
+  //         port: "",
+  //         path: '/.*',
+  //       }
+  //   ]
+  // },
+
 });

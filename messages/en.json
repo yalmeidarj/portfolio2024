@@ -18,35 +18,39 @@
     "subtitle": "A full-stack software developer based in Toronto, passionate about creating beautiful and functional web applications.",
     "switch": "Switch to English"
   },
+  "projectSection": {
+    "title": "Projects"
+  },
+"project2":{
+    "title":"sdfa",
+     "description":"",
+     "alt":""
+  },
+  "project1":{
+    "title":"Project 1",
+     "description":"This is a description of project 1A bit about me: Welcome to my portfolio! My name is Yuri Almeida, and I'm a self- taught Full Stack Developer living in Toronto.I'm passionate by the full range of web development, but particularly fascinated by the Backend.",
+     "alt":"Project 1"
+  },
+  "project3":{
+    "title":"project3",
+     "description":"",
+     "alt":""
+  },
   "techSkills": {
+    "title": "skills",
     "languages": "Languages",
-    "technologies": "Other Technologies"
+    "technologies": "Other Technologies",
+    "all": "All",
+    "development": "Development",
+    "design": "Design & Styling",
+    "tools": "Tools"
   },
-  "projects": {
-    "sectionTitle": " My Work",
-
-    "ownPortfolio": {
-      "smallTitle": "Web App",
-      "title": "This Portfolio",
-      "description": "A portfolio website to showcase my work, and a bit about me. Built with React, Next.js. It uses i18next for internationalization, and is hosted on Vercel."
-    },
-    "Ymaa": {
-      "smallTitle": "Web App",
-      "title": "My Movies!",
-      "description": "A web app to search for movies and TV shows, and save them to favorites. Built with React, using the the Codux IDE, and fetching from the Movie Database API."
-    },
-    "FlaToronto": {
-      "smallTitle": "Web App",
-      "title": "Fla Toronto",
-      "description": "A web app for the supporters of Flamengo in Toronto. Built with React -- under construction."
-    },
-    "eSports": {
-      "smallTitle": "Web App",
-      "title": "Find your DUO",
-      "description": "Lorem ipsum dolor amet you probably haven't heard of them bitters selvage listicle heirloom."
-    }
+  "navbar": {
+    "aboutMe": "About",
+    "projects": "Projects",
+    "contactMe": "Contact"
   },
-  "ContactMe": {
+  "contact": {
     "title": "Get in Touch",
     "githubTitle": "My Github profile",
     "emailTitle": "Send me an email",
@@ -58,5 +62,9 @@
     "messageSent": "Message sent!",
     "getBackSoon": "I'll get back to you soon.",
     "error": "Please fill in all fields"
+  },
+  "footer": {
+    "madeBy": "Made by Yuri Almeida",
+    "rights": "All rights reserved"
   }
 }

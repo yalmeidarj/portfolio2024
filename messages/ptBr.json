@@ -17,10 +17,6 @@
     "subtitle": "Um desenvolvedor de software full-stack com base em Toronto, apaixonado por criar aplicativos web bonitos e funcionais.",
     "switch": "Trocar para Português"
   },
-  "techSkills": {
-    "languages": "Linguagens",
-    "technologies": "Outras Tecnologias"
-  },
   "projects": {
     "sectionTitle": " Meus Projetos",
     "ownPortfolio": {
@@ -44,7 +40,39 @@
       "description": "Lorem ipsum dolor amet you probably haven't heard of them bitters selvage listicle heirloom."
     }
   },
-  "ContactMe": {
+  "projectSection": {
+    "title": "Projetos"
+  },
+  "project2": {
+    "title": "Projeto 2",
+    "description": "",
+    "alt": ""
+  },
+  "project1": {
+    "title": "Projeto 1",
+    "description": "Esta é a descrição do projeto 1",
+    "alt": "Project 1"
+  },
+  "project3": {
+    "title": "Projeto 3",
+    "description": "",
+    "alt": ""
+  },
+  "techSkills": {
+    "title": "Habilidades Técnicas",
+    "languages": "Tecnologias",
+    "technologies": "Tecnologias",
+    "all": "Todas",
+    "development": "Desenvolvimento",
+    "design": "Design e Prototipagem",
+    "tools": "Ferramentas"
+  },
+  "navbar": {
+    "aboutMe": "Sobre",
+    "projects": "Projetos",
+    "contactMe": "Contato"
+  },
+  "contact": {
     "title": "Entre em contato",
     "githubTitle": "Meu perfil no Github",
     "emailTitle": "Envie-me um email",
@@ -56,5 +84,9 @@
     "messageSent": "Mensagem enviada!",
     "getBackSoon": "Entrarei em contato em breve.",
     "error": "Por favor, preencha todos os campos."
+  },
+  "footer": {
+    "madeBy": "Feito por Yuri Almeida",
+    "rights": "Todos os direitos reservados"
   }
 }

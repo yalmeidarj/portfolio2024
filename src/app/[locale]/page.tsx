@@ -1,138 +1,97 @@
-import Image from "next/image";
 import { useTranslations } from 'next-intl';
 import AboutMe from "@/components/AboutMe";
-import ThemeSwitch from "@/components/ThemeSwitch";
-import LanguageSelector from "@/components/LanguageSelector";
-import Link from "next/link";
-import { RxExternalLink } from "react-icons/rx";
+import { Projects } from "@/components/Projects/Projects";
+import ContactMe from "@/components/contactMe/ContactMe";
+import Controllers from "@/components/Controllers";
+import MyTechs from '@/components/myTechs/MyTechs';
+import NavBar from '@/components/NavBar';
+import Footer from '@/components/Footer';
+// import { useRef } from 'react';
+
+import Image from 'next/image';
+import { SiGit, SiGithub } from 'react-icons/si';
 
 
 export default function Home() {
   const t = useTranslations('Home');
+  
   return (
-    <div className=' w-screen h-screen items-center justify-center text-white '>
-      <ThemeSwitch />
-      <LanguageSelector />
+
+    <div className='flex flex-col  mx-auto scroll-smooth min-h-screen w-full justify-between gap-8 items-center text-white '>
+      <div id="aboutMe" className='mx-auto flex items-center justify-between w-full border-b-2 border-solid border-color py-2 mt-2'>
+        <h1 className='ml-8  text-3xl'>Yuri Almeida</h1> 
+        <Controllers />      
+  
+      </div>
+      <Section
+      id='asdf'
+      >
+      
       <AboutMe />
+      </Section>    
+      
+      <NavBar />
+      
+      <Section id="myTechs">
+      
+        <MyTechs />
+      </Section>
+      <Section id="projects" >
+
       <Projects />
-    </div>
-      );
-}
-
-function Projects() {
-  const t = useTranslations('Projects');
-
-  const projects: ProjectCardProps[] = [
-    {
-      title: 'Project 1',
-      description: "This is a description of project 1A bit about me: Welcome to my portfolio! My name is Yuri Almeida, and I'm a self- taught Full Stack Developer living in Toronto.I'm passionate by the full range of web development, but particularly fascinated by the Backend.",
-      link: '#',
-      imgSrc:'/projects/movies.png',
-      alt: 'project image',
-      tags: ['React', 'TypeScript', 'TailwindCSS']
-
-    },
-    {
-      title: 'Project 2',
-      description: 'This is a front-end project, built with React, TypeScript and TailwindCSS',
-      link: '#',
-      imgSrc: '/projects/y.png',
-      alt: 'project image',
-      tags: ['Project43', 'Project 2']
-    },
-    {
-      title: 'Project 3',
-      description: 'This is a description of project 3',
-      link: '#',
-      imgSrc:'/projects/tdx.png',
-      alt: 'project image',
-      // tags: ['Project 3', 'Project 3']
-    }
-  ];
-  return (
-    <div className=' w-screen h-screen items-center justify-center text-white '>
-      <h1>Projects</h1>
-      {/* <h1>{t('Projects')}</h1> */}
-      <div className=' '>
-        {projects.map((project: ProjectCardProps) => (
-        <ProjectCard
-          key={project.alt}
-          project={project}          
-        />
-      ))}
+      </Section>
+      <Section id="contactMe">
+        <div className='flex flex-col sm:flex sm:flex-row gap-6 sm:gap-2 '>
+          <Profile />
+      <ContactMe />
       </div>
+      </Section>
+      {/* </div> */}
+      <Footer />
     </div>
   );
 }
 
-type ProjectCardProps = {
-  title: string;
-  link: string;
-  description: string;
-  imgSrc: string;
-  alt: string;
-  tags?: string[];
-};
-
-type ProjectProps = {
-  project: ProjectCardProps;
-};
-
-
-function ProjectCard({ project }: ProjectProps) {
-  const { title, link, description, imgSrc, alt, tags } = project;
-
+function Section({ id,  children}: { id: string,  children: React.ReactNode}) {
   return (
-    <>
-    <Link href={link}>
-      <div className='mx-auto  my-2 px-5 py-8 max-w-2xl flex flex-col justify-between gap-8 md:flex md:flex-row md:justify-between  bg-background-light dark:bg-background-dark shadow-xl rounded-lg  cursor-pointer'>
-        <div className='flex flex-col justify-between '>
-            <div className="flex flex-col max-w-[450px] gap-2">
-              <div className=' '>
-              
-              </div>
-            <h2 className='flex flex-row items-center font-bold text-lg'>
-              {title} <RxExternalLink aria-label={`Open ${title} project in a new tab`} />
-            </h2>
-            <p className='mt-2 text-sm leading-relaxed text-left'>{description}</p>
-          </div>
-          <div className='flex flex-wrap gap-4 mt-2 '>
-            {tags?.map((tag) => (
-              <Tag key={tag} tag={tag} />
-            ))}
-          </div>
-        </div>
-        <div className='max-w-[300px]'>
-          
-            <Image
-              src={imgSrc}
-              alt={alt}
-              layout="responsive" // Changed from 'fill' to 'responsive' for maintaining aspect ratio
-              width={200} // Specify a default width
-              height={100} 
-              // width={200}
-              // height={100}
-              sizes="(max-width: 200px) 100vw, 200px"
-              // objectFit='contain'
-              className='rounded-md '
-            />
-
-        </div>
-      </div>
-    </Link>
-
-        </>
-
-  );
-}
-
-function Tag({ tag }: { tag: string }) {
-  return (
-    <span className='rounded-full text-xs  border-solid border-2 border-white font-semibold px-3 py-1'>
-      {tag}
-    </span>
+    <section id={id} className='px-8 my-4 gap-8 w-full '>
+      {children}
+    </section>
   )
 }
+
+function Profile() {
+  return (
+    <div className="flex justify-center p-4 sm:justify-start w-full h-full border-solid border-2 border-color">
+      <div className='flex flex-col items-center sm:flex sm:flex-row gap-4 '>
+
+        <Image
+          src="https://avatars.githubusercontent.com/u/73500564?v=4"
+          // src="/profile1.png"
+          alt="Picture of the author"
+          width={180}
+          height={180}
+          className='rounded-full'
+        />
+        <div className='flex flex-col gap-2'>
+          <p className='text-sm leading-relaxed'>Bem-vindo ao meu portfólio! Meu nome é Yuri Almeida e eu sou um desenvolvedor Full Stack autodidata morando em Toronto. Sou apaixonado por toda a gama do desenvolvimento web, mas particularmente fascinado pelo Backend. Gosto de enfrentar desafios com positividade e determinação. Entre em contato!</p>
+        
+        <h1>Connect with me</h1>
+        <div className='flex flex-row-wrap gap-2 '>
+          <SiGithub />
+          <SiGit />
+        
+        </div>
+        </div>
+      </div>
+
+    </div>
+  )
+}
+
+
+
+
 
 
 

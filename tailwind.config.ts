@@ -28,7 +28,7 @@ const config: Config = {
           dark: "#7b8794",
         },
 
-        "text-primary": {
+        "textColor": {
           light: "#2d3748",
           dark: "#fff",
         },

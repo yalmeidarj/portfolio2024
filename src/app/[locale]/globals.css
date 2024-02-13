@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -26,12 +26,72 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-/* *{
-  @apply transition-colors duration-100 ease-in-out
-}; */
+p {
+  @apply text-sm;
+}
+
+h1 {
+  @apply text-xl;
+  @apply font-bold;
+}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  /* color: rgb(var(--text-color)); */
+  /* background: linear-gradient(to bottom, rgba(var(--primary-color), 0.1), rgba(var(--secondary-color), 0.1)), rgb(var(--background-color)); */
+  /* background-image: radial-gradient( circle 732px at -23.9% -25.1%,  rgba(30,39,107,1) 6.1%, rgba(188,104,142,1) 100.2% ); */
+  font-family: 'Inter', sans-serif; /* A modern, legible font */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(var(--primary-color)); /* Use the primary color for headings */
+}
+
+a {
+  color: rgb(var(--primary-color));
+  text-decoration: none; /* Cleaner look for links */
+}
+
+/* @layer utilities  */
+button {
+   background: bg-primary-color text-white font-medium;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* p {
+  @apply text-base text-text-color;
+} */
+
+/* Utility classes for common design patterns */
+@layer utilities {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-semibold transition-colors duration-200 ease-in-out;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-color text-white;
+    &:hover {
+      @apply bg-opacity-90;
+    }
+  }
+
+  .text-secondary {
+    color: rgb(var(--secondary-color));
   }
 }
