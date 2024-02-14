@@ -49,7 +49,7 @@ export default function SortButton({ categories }: { categories: string[] }) {
                 {categories.map(category => (
                     <button
                         key={category}
-                        className={`px-2 py-1 text-xs font-medium rounded-md shadow-sm ${selectedCategory === category ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-800'}`} 
+                        className={`px-2 py-1 text-xs font-medium rounded-md shadow-sm ${selectedCategory === category ? 'dark:bg-custom-text-accent bg-custom-text-accent-light dark:text-custom-text-dark text-custom-text-light' : 'dark:bg-custom-text-dark dark:text-custom-text-light bg-custom-text-light text-custom-text-dark'}`} 
                         onClick={() => setSelectedCategory(category)}
                     >
                         {category}
@@ -60,7 +60,7 @@ export default function SortButton({ categories }: { categories: string[] }) {
             {/* Technologies */}
             <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-2"> 
                 {filteredTechnologies.map((tech, index) => (
-                    <div key={index} className="flex flex-col items-center justify-center p-2 border rounded-md shadow-sm">
+                    <div key={index} className="flex flex-col  items-center justify-center p-2 border border-custom-borderColor-light text-custom-text-light dark:text-custom-text-dark dark:border-custom-borderColor rounded-md shadow-sm">
                         <div className="text-2xl">{tech.icon}</div> 
                         <div className="mt-1 text-xs font-medium">{tech.name}</div>
                     </div>

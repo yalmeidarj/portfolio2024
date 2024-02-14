@@ -24,15 +24,15 @@ const LanguageSelector = () => {
     const flagSrc = selectedLang === 'ptBr' ? '/brFlag.png' : '/ukFlag.png';
 
     return (
-        <div className="flex justify-end items-center ">
-            <Image
+        <div className="flex justify-end items-center  ">
+            {/* <Image
                 src={flagSrc}
                 alt={selectedLang === 'ptBr' ? "Português" : "English"}
                 width={26}
                 height={30}
                 className="rounded-md "
-            />
-            <select value={selectedLang} onChange={handleLanguageChange} className="mx-1 text-xs p-1 rounded-xl">
+            /> */}
+            <select value={selectedLang} onChange={handleLanguageChange} className="opacity-90 font-semibold bg-transparent text-xs p-1 rounded-md">
                 <option className="mx-1  " value="en">English</option>
                 <option className="mx-1  " value="ptBr">Português</option>
             </select>

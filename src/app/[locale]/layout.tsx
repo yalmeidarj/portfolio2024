@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang={locale}
       suppressHydrationWarning>
-      <body className='scroll-smooth font-mono'>
+      <body className='scroll-smooth '>
         <Toaster />
         <Providers>
           {children}

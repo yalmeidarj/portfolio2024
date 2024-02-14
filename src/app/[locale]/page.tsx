@@ -17,19 +17,26 @@ export default function Home() {
   
   return (
 
-    <div className='flex flex-col  mx-auto scroll-smooth min-h-screen w-full justify-between gap-8 items-center text-white '>
-      <div id="aboutMe" className='mx-auto flex items-center justify-between w-full border-b-2 border-solid border-color py-2 mt-2'>
-        <h1 className='ml-8  text-3xl'>Yuri Almeida</h1> 
-        <Controllers />      
+    <div className='transition ease-in-out delay-200 flex flex-col dark:bg-gradient-to-tl bg-gradient-to-tl bg-custom-background dark:bg-custom-black bg-custom-background-light mx-auto scroll-smooth min-h-screen w-full justify-between gap-8 items-center dark:text-custom-text-dark text-custom-text-light '>
+      <div id="aboutMe" className='mx-auto flex items-center justify-between w-full py-2 '>
+        {/* <h1 className='ml-8   text-3xl'>Yuri Almeida</h1> 
+        <Controllers />       */}
   
       </div>
       <Section
       id='asdf'
       >
+        <div className='flex flex-col '>
+          <div className='flex flex-row justify-between w-full'>
+          <h1 className='text-3xl text-custom-title-accent-light dark:text-custom-text-dark'>Yuri Almeida</h1>
+          <Controllers />   
+        </div>
       
       <AboutMe />
+        </div>
       </Section>    
       
+      <div className="dark:bg-custom-midBackground">
       <NavBar />
       
       <Section id="myTechs">
@@ -47,6 +54,7 @@ export default function Home() {
       </div>
       </Section>
       {/* </div> */}
+    </div>
       <Footer />
     </div>
   );
@@ -62,7 +70,8 @@ function Section({ id,  children}: { id: string,  children: React.ReactNode}) {
 
 function Profile() {
   return (
-    <div className="flex justify-center p-4 sm:justify-start w-full h-full border-solid border-2 border-color">
+    // <div className="flex justify-center p-4 sm:justify-start w-full h-full border-solid border-2 border-color">
+    <div className="flex justify-center p-4 sm:justify-start w-full h-full">
       <div className='flex flex-col items-center sm:flex sm:flex-row gap-4 '>
 
         <Image

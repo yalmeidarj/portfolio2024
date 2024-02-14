@@ -46,13 +46,33 @@ h1 {
 @tailwind components;
 @tailwind utilities;
 
-
-
+:root {
+  --background: linear-gradient(305deg, #4055c2 0%, #45457a 46%, #323423 100%);
+}
+  
+  
 body {
   /* color: rgb(var(--text-color)); */
-  /* background: linear-gradient(to bottom, rgba(var(--primary-color), 0.1), rgba(var(--secondary-color), 0.1)), rgb(var(--background-color)); */
-  /* background-image: radial-gradient( circle 732px at -23.9% -25.1%,  rgba(30,39,107,1) 6.1%, rgba(188,104,142,1) 100.2% ); */
+  --primary-color: #5878cc;
+  background-color: #4055c2;
+  background-image: linear-gradient(305deg, #4055c2 0%, #45457a 46%, #323423 100%);
   font-family: 'Inter', sans-serif; /* A modern, legible font */
+}
+
+@media (prefers-color-scheme: dark) {
+body {
+  color-scheme: dark;
+  background-color: #96d13b;
+  background-image: linear-gradient(62deg, #96d13b 0%, #d5c18f 100%); 
+
+}
+}
+
+// animation time for the theme change
+@media (prefers-reduced-motion: no-preference) {
+  /* html {
+    transition: smooth
+  } */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,7 +92,32 @@ button {
 html {
   scroll-behavior: smooth;
 }
+html {
+  color-scheme: light;
+  --background-color: white;
+  --primary-color: #5878cc;
+  --secondary-color: black;
+  --neutral-color: #3f7fbf;
+  --white-variant: #f4f4f4;
+  --black-variant: #0e0e0e;
+  --title-color: #0e0e0e;
+  --shadow-color: rgba(0, 0, 0, 0.55);
+}
 
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+    --background: linear-gradient(305deg, #4055c2 0%, #45457a 46%, #323423 100%);
+    --background-color: #96d13b;
+    --primary-color: #3f7fbf;
+    --secondary-color: #5878cc;
+    --neutral-color: grey;
+    --white-variant: #f4f4f4;
+    --black-variant: #000;
+    --title-color: #3f7fbf;
+    --shadow-color: rgba(255, 255, 255, 0.15);
+  }
+}
 
 /* p {
   @apply text-base text-text-color;
