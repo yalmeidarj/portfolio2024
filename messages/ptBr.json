@@ -6,6 +6,8 @@
     "passionLabel": "Um pouco sobre mim:",
     "resumeLabel": "Currículo",
     "resume": "Ver PDF",
+    "passion2": "Atualmente, estou me aprofundando nas ações de servidor do Next.js 14, atraído por suas capacidades de otimizar processos de backend e melhorar a experiência do usuário por meio de seus novos componentes de servidor.",
+    "passion3": "Olhando para frente, estou ansioso para mergulhar mais fundo em uma linguagem de baixo nível como Go e sempre me empolgo com tecnologias emergentes como IA.",
     "skillsLabel": "Habilidades",
     "skills": "Full Stack Development, Backend Development",
     "passion": "Bem-vindo ao meu portfólio! Meu nome é Yuri Almeida e eu sou um desenvolvedor Full Stack autodidata morando em Toronto. Sou apaixonado por toda a gama do desenvolvimento web, mas particularmente fascinado pelo Backend. Gosto de enfrentar desafios com positividade e determinação.  Entre em contato!",
@@ -44,19 +46,19 @@
     "title": "Projetos"
   },
   "project2": {
-    "title": "Projeto 2",
-    "description": "",
-    "alt": ""
-  },
-  "project1": {
-    "title": "Projeto 1",
-    "description": "Esta é a descrição do projeto 1",
-    "alt": "Project 1"
+    "title": "Site da Ymaa Desentupidora",
+    "description": "Este projeto envolveu a criação de uma presença online envolvente e acessível para a Ymaa Desentupidora, uma empresa de serviços de encanamento no Rio de Janeiro. Utilizando minhas habilidades em desenvolvimento web, projetei e implementei um site amigável que destaca os serviços da empresa, incluindo encanamento de emergência 24/7. O site foi construído com foco em otimização SEO para garantir alta visibilidade e engajamento do cliente, demonstrando minha competência em criar soluções web eficazes para necessidades empresariais.",
+    "alt": "Um site profissional para uma empresa de serviços de encanamento, destacando ofertas de serviços e informações de contato."
   },
   "project3": {
-    "title": "Projeto 3",
-    "description": "",
-    "alt": ""
+    "title": "Portfólio Pessoal",
+    "description": "Este site de portfólio é uma vitrine abrangente das minhas habilidades de desenvolvimento full-stack, incluindo proficiência em React, Node.js, Express e MongoDB, entre outras tecnologias. Vivendo em Toronto e sendo um desenvolvedor autodidata, foquei em demonstrar minha expertise em backend junto com um conjunto de habilidades de desenvolvimento web bem arredondado. O próprio site é um testemunho da minha capacidade de criar aplicações web envolventes e amigáveis ao usuário, destacando minha jornada, projetos e as tecnologias nas quais me destaco.",
+    "alt": "Um portfólio online destacando as capacidades de desenvolvimento full-stack e o trabalho de projeto de Yuri Almeida, um desenvolvedor apaixonado por tecnologias de backend."
+  },
+  "project1": {
+    "title": "Simulador de Ligas",
+    "description": "Uma aplicação web de ponta que destaca minha expertise em React, Next.js e Tailwind CSS. Possui integração dinâmica com a API-Football da RapidAPI, oferecendo dados atualizados de ligas de futebol em tempo real. Este projeto demonstra minha habilidade em construir aplicações modernas, responsivas e centradas no usuário, evidenciando minha proficiência nas tecnologias mais recentes de desenvolvimento web.",
+    "alt": "Uma aplicação web que utiliza React, Next.js e Tailwind CSS para simulações de ligas de futebol em tempo real."
   },
   "techSkills": {
     "title": "Habilidades Técnicas",
@@ -86,7 +88,6 @@
     "error": "Por favor, preencha todos os campos."
   },
   "footer": {
-    "madeBy": "Feito por Yuri Almeida",
-    "rights": "Todos os direitos reservados"
+    "madeBy": "Desgin e desenvolvimento feito por"
   }
 }

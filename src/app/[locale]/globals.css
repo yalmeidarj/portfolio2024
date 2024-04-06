@@ -51,22 +51,18 @@ h1 {
 }
   
   
-body {
-  /* color: rgb(var(--text-color)); */
+body, html {
+  
   --primary-color: #5878cc;
   background-color: #4055c2;
   background-image: linear-gradient(305deg, #4055c2 0%, #45457a 46%, #323423 100%);
   font-family: 'Inter', sans-serif; /* A modern, legible font */
+  box-sizing: content-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-body {
-  color-scheme: dark;
-  background-color: #96d13b;
-  background-image: linear-gradient(62deg, #96d13b 0%, #d5c18f 100%); 
-
-}
-}
 
 // animation time for the theme change
 @media (prefers-reduced-motion: no-preference) {
@@ -119,10 +115,6 @@ html {
   }
 }
 
-/* p {
-  @apply text-base text-text-color;
-} */
-
 /* Utility classes for common design patterns */
 @layer utilities {
   .btn {
@@ -140,3 +132,4 @@ html {
     color: rgb(var(--secondary-color));
   }
 }
+

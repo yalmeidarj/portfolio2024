@@ -8,10 +8,11 @@
     "skillsLabel": "Skills",
     "skills": "Full Stack Development, Backend Development",
     "resume": "See PDF",
-    "passion": "Welcome to my portfolio! My name is Yuri Almeida, and I'm a self-taught Full Stack Developer living in Toronto. I'm passionate by the full range of web development, but particularly fascinated by the Backend. I relish a good challenge and approach them with positivity and focus. Let's get in touch!",
+    "passion": "In 2021, I embarked on my software development journey by harnessing Python to automate daily tasks, a venture that swiftly morphed into a deep-seated passion for technology. This initial step paved the way for my exploration into web development, where I've since devised custom solutions for friends and family and developed innovative web applications for small businesses—such as a bespoke inventory management system that boosted a local retailer's operational efficiency by 30%.",
+    "passion2": "Currently, I'm delving into Next.js 14 server actions, attracted by its capabilities to streamline backend processes and enhance user experiences through its novel server components.",
+    "passion3": "Looking ahead, I'm looking forward to dive deeper into a low level language such as Go and I'm always excited about emerging technologies such as AI.",
     "name": "Yuri Almeida",
     "location": "Toronto, Canada"
-    
   },
   "intro": {
     "title": "Hello, I'm Yuri Almeida!",
@@ -21,20 +22,20 @@
   "projectSection": {
     "title": "Projects"
   },
-"project2":{
-    "title":"sdfa",
-     "description":"",
-     "alt":""
+  "project3": {
+    "title": "Personal Portfolio",
+    "description": "This portfolio website is a comprehensive showcase of my full-stack development skills, including proficiency in React, Node.js, Express, and MongoDB, among other technologies. Living in Toronto and being a self-taught developer, I've focused on demonstrating my backend expertise alongside a well-rounded web development skill set. The site itself is a testament to my ability to create engaging, user-friendly web applications, highlighting my journey, projects, and the technologies I excel in.",
+    "alt": "An online portfolio showcasing the full-stack development capabilities and project work of Yuri Almeida, a developer passionate about backend technologies."
   },
-  "project1":{
-    "title":"Project 1",
-     "description":"This is a description of project 1A bit about me: Welcome to my portfolio! My name is Yuri Almeida, and I'm a self- taught Full Stack Developer living in Toronto.I'm passionate by the full range of web development, but particularly fascinated by the Backend.",
-     "alt":"Project 1"
+  "project2": {
+    "title": "Ymaa Desentupidora Website",
+    "description": "This project involved creating an engaging and accessible online presence for Ymaa Desentupidora, a plumbing service company in Rio de Janeiro. Utilizing my skills in web development, I designed and implemented a user-friendly website that highlights the company's services, including 24/7 emergency plumbing. The site is built with a focus on SEO optimization to ensure high visibility and customer engagement, demonstrating my proficiency in creating effective web solutions for business needs.",
+    "alt": "A professional website for a plumbing service company, showcasing service offerings and contact information."
   },
-  "project3":{
-    "title":"project3",
-     "description":"",
-     "alt":""
+  "project1": {
+    "title": "League Simulator",
+    "description": "A cutting-edge web application showcasing my expertise in React, Next.js, and Tailwind CSS. It features dynamic API integration with API-Football from RapidAPI, providing real-time football league data. This project exemplifies my ability to build modern, responsive, and user-centric applications, demonstrating my proficiency in the latest web development technologies.",
+    "alt": "A web application leveraging React, Next.js, and Tailwind CSS for real-time football league simulations."
   },
   "techSkills": {
     "title": "skills",
@@ -64,7 +65,7 @@
     "error": "Please fill in all fields"
   },
   "footer": {
-    "madeBy": "Made by Yuri Almeida",
-    "rights": "All rights reserved"
+    "madeBy": "Designed & developed by"
+
   }
 }

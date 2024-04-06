@@ -50,11 +50,11 @@ export default function ContactMeForm({
 
     }
     
-    return (
-        <div className='mx-auto max-w-md rounded-md flex px-2 py-4 border border-solid-2 border-color '>        
+    return (                
+        <div className='mx-auto w-full max-w-lg sm:dark:bg-gradient-to-br md:dark:from-custom-midBackground md:dark:to-custom-black mb-12 md:mb-16  rounded-md flex py-4'>        
             <form                
                 ref={ref}
-                className="flex flex-col mx-auto px-5 py-2 gap-4"
+                className="flex w-full flex-col mx-auto py-2 gap-4"
                 action={async (formData) => {
                 const result = await clientAction(formData);
                 if (result !== false) {
@@ -66,30 +66,6 @@ export default function ContactMeForm({
                 
                 }}                
             >
-                <div className='flex mx-auto gap-2 justify-between items-center '>
-                    <h1 className="">{label}</h1>
-                    {/* <div className='flex gap-2 '>
-                        <Link
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href='https://github.com/yalmeidarj'
-                        >                    
-                            <SiGithub />
-                        </Link>
-                        <Link
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href='https://twitter.com/yalmeidarj'
-                            >
-                            <SiTwitter />
-                        </Link>
-                        <Link
-                            href='mailto:yalmeida.rj@gmail.com'
-                            >
-                            <SiMaildotru />
-                        </Link>
-                    </div> */}
-                </div>
                 {children}
             </form>
         </div>

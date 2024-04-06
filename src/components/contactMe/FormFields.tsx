@@ -13,23 +13,25 @@ export default function FormFields({ props }: FieldsProps) {
   const { nameField, replyToEmailField, messageField } = props;
     
   return (
-    <div className='grid grid-cols-2 gap-4'>
+    <div className='w-full flex flex-col gap-4 '>
+      <div className='w-full flex flex-col sm:flex-row gap-2'>      
       <InputType
         type="text"
         name="name"
         placeholder={nameField}
-      />
+        />
       <InputType
         type="email"
         name="email"
         placeholder={replyToEmailField}
-      />
+        />
+      </div>
       <textarea
         name="message"
         id="message"
         placeholder={messageField}
           required
-        className="col-span-2 min-h-[100px] items-center px-1 py-2 rounded-md border border-solid-2 border-color"
+        className="w-full col-span-2 min-h-[150px] items-center py-2 p-4 border-solid border border-custom-nav-light  dark:border-custom-title bg-custom-background-light dark:bg-custom-midBackground"
       />
     </div>
 
@@ -46,7 +48,7 @@ function InputType({type, name, placeholder}: {type: string, name: string, place
             // autoComplete="off"
             placeholder={placeholder}
             required
-      className="col-span-1 flex items-center px-1 py-2 rounded-md border border-solid-2 border-color"
+      className=" w-full flex items-center py-2 px-4 border-solid border-custom-nav-light border dark:border-custom-title bg-custom-background-light dark:bg-custom-midBackground"
       />
     // </div>
     )

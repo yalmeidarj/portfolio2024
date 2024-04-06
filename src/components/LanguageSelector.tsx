@@ -24,7 +24,7 @@ const LanguageSelector = () => {
     const flagSrc = selectedLang === 'ptBr' ? '/brFlag.png' : '/ukFlag.png';
 
     return (
-        <div className="flex justify-end items-center  ">
+        <div className="flex justify-end items-center mr-2  ">
             {/* <Image
                 src={flagSrc}
                 alt={selectedLang === 'ptBr' ? "Português" : "English"}

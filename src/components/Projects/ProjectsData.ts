@@ -12,28 +12,28 @@ export function ProjectsData() {
   const projects: ProjectCardProps[] = [
     {
       title: t1("title"),
-      link: "#",
+      link: "https://league-simulator-smoky.vercel.app",
       description: t1("description"),
-      imgSrc:"/projects/tdx.png",
+      imgSrc: "/projects/LeagueSimulator.png",
       alt: t1("alt"),
       tags: ["React", "Node.js", "Express", "MongoDB"],
     },
     {
       title: t2("title"),
-      link: "#",
+      link: "https://www.ymaadesentupidora.com.br",
       description: t2("description"),
-      imgSrc:"/projects/y.png" ,
+      imgSrc: "/projects/y.png",
       alt: t2("alt"),
-      tags: ["React", "Node.js", "Express", "MongoDB"]
+      tags: ["React", "Node.js", "Express", "MongoDB"],
     },
     {
       title: t3("title"),
-      link: "#",
+      link: "https://league-simulator-smoky.vercel.app",
       description: t3("description"),
-      imgSrc:"/projects/movies.png",
+      imgSrc: "/projects/portfolioPessoal.png",
       alt: t3("alt"),
-      tags: ["React", "Node.js", "Express", "MongoDB"]
-    }
+      tags: ["React", "NextJs", "Tailwind css", "Shadcn"],
+    },
   ];
 
   return projects;

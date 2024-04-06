@@ -21,13 +21,13 @@ export default function ThemeSwitch(){
     )
     if (resolvedTheme === 'light') {
         return <FiMoon
-            className="cursor-pointer w-[18px] h-[18px]"
+            className="cursor-pointer w-[22px] h-[22px]"
             onClick={() => setTheme('dark')} />
         }
         
         if (resolvedTheme === 'dark') {
             return <FiSun
-            className="cursor-pointer w-[18px] h-[18px]"
+            className="cursor-pointer w-[22px] h-[22px]"
             onClick={() => setTheme('light')} />
     }
 

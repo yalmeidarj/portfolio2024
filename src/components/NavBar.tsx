@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 export default function NavBar() {
     const t = useTranslations('navbar');
     return (
-        <nav className='flex justify-around sm:justify-center sticky top-0 z-10 items-center w-full h-16  dark:bg-opacity-95 bg-custom-nav-light dark:bg-custom-midBackground border-b-2 border-solid border-b-custom-borderColor-light dark:border-b-custom-borderColor  '>
+        <nav className='flex justify-around sm:justify-center  items-center w-full overflow-hidden h-14 dark:bg-opacity-95 bg-gradient-to-r from-custom-title to-custom-nav-light dark:bg-none dark:bg-custom-black border-b-2 border-solid border-b-custom-borderColor-light dark:border-b-custom-borderColor shadow-md '>
             <NavItem href="#aboutMe" label={t('aboutMe').toUpperCase()} />
             <NavItem href="#projects" label={t('projects').toUpperCase()} />
             <NavItem href="#contactMe"label={t('contactMe').toUpperCase()} />
