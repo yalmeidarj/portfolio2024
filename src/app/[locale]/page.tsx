@@ -78,7 +78,7 @@ function Profile() {
     <div className="flex min-w-[300px] justify-start items-center  w-full h-full">
       <div className='flex  flex-col justify-center items-center sm:flex sm:flex-row  gap-4 '>
            <Image
-            src="/profile2.png"
+            src="/avatarProfile.png"
             alt="Picture of the developer"
             width={240}
             height={240}

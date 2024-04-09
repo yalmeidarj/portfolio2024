@@ -3,6 +3,7 @@ import { FiExternalLink } from "react-icons/fi";
 import { SiGithub } from "react-icons/si";
 import { FaAnglesDown, FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import Link from 'next/link';
 
 export default function AboutMe() {
     const t = useTranslations('aboutMe');
@@ -34,19 +35,38 @@ export default function AboutMe() {
 
 function Socials() {
     return (
-        <div className='flex  flex-row sm:flex-col text-2xl text-custom-borderColor-light dark:text-custom-borderColor gap-4'>
-           <FiExternalLink />
-            <SiGithub />
-            <FaXTwitter />
-            <FaLinkedin />
+        <div className='flex flex-row sm:flex-col text-2xl gap-6 text-text-accent-light dark:text-text-dark'>
+            <SocialIcon href="#">
+                <FiExternalLink className=' hover:scale-110 hover:bg-transparent ' />
+            </SocialIcon>
+            <SocialIcon href="https://github.com/yalmeidarj">
+                <SiGithub className='transition-all duration-300 hover:text-title-accent-light dark:hover:text-title hover:scale-110' />
+            </SocialIcon>
+            {/* <SocialIcon href="#">
+                <FaLinkedin className='transition-all duration-300 hover:text-title-accent-light dark:hover:text-title hover:scale-110' />
+            </SocialIcon> */}
         </div>
     );
 }
-            
-function SocialIcon({children}: {children: React.ReactNode}) {
+
+function SocialIcon({ children, href }: { children: React.ReactNode, href: string }) {
     return (
-        <div className=' rounded-md border-solid border-2 border-custom-borderColor' >
-            {children}
-        </div>
-    )
+        <Link
+            href={href}
+            target='_blank'
+            className='rounded-xs group hover:bg-gradient-to-tr from-midTitle to-tittleLighter dark:hover:from-title dark:hover:to-tittleDarker  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-title-accent-light dark:focus:ring-title'>
+            <div
+                className='text-custom-borderColor-light dark:text-custom-tittleDarker
+            group-hover:scale-110 hover:text-custom-title
+            dark:hover:text-custom-nav-light
+            '>
+                {children}
+            </div>
+        </Link>
+        // hover:bg-gradient-to-tr hover:from-custom-title-accent-light dark:hover:from-custom-title 
+    );
 }
+
+{/* <SocialIcon href="#">
+        <FaXTwitter className='transition-colors duration-300 hover:text-title-accent-light dark:hover:text-title' />
+    </SocialIcon> */}
