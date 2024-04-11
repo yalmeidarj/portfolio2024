@@ -47,16 +47,19 @@
   },
   "project2": {
     "title": "Site da Ymaa Desentupidora",
+    "subHeading": "Site profissional para uma empresa de desentupimento no Rio de Janeiro.",
     "description": "Este projeto envolveu a criação de uma presença online envolvente e acessível para a Ymaa Desentupidora, uma empresa de serviços de encanamento no Rio de Janeiro. Utilizando minhas habilidades em desenvolvimento web, projetei e implementei um site amigável que destaca os serviços da empresa, incluindo encanamento de emergência 24/7. O site foi construído com foco em otimização SEO para garantir alta visibilidade e engajamento do cliente, demonstrando minha competência em criar soluções web eficazes para necessidades empresariais.",
     "alt": "Um site profissional para uma empresa de serviços de encanamento, destacando ofertas de serviços e informações de contato."
   },
   "project3": {
     "title": "Portfólio Pessoal",
+    "subHeading": "Portfólio para destacar meus projetos e habilidades técnicas.",
     "description": "Este site de portfólio é uma vitrine abrangente das minhas habilidades de desenvolvimento full-stack, incluindo proficiência em React, Node.js, Express e MongoDB, entre outras tecnologias. Vivendo em Toronto e sendo um desenvolvedor autodidata, foquei em demonstrar minha expertise em backend junto com um conjunto de habilidades de desenvolvimento web bem arredondado. O próprio site é um testemunho da minha capacidade de criar aplicações web envolventes e amigáveis ao usuário, destacando minha jornada, projetos e as tecnologias nas quais me destaco.",
     "alt": "Um portfólio online destacando as capacidades de desenvolvimento full-stack e o trabalho de projeto de Yuri Almeida, um desenvolvedor apaixonado por tecnologias de backend."
   },
   "project1": {
     "title": "Simulador de Ligas",
+    "subHeading": "Aplicação web de ponta para simulações de ligas de futebol em tempo real.",
     "description": "Uma aplicação web de ponta que destaca minha expertise em React, Next.js e Tailwind CSS. Possui integração dinâmica com a API-Football da RapidAPI, oferecendo dados atualizados de ligas de futebol em tempo real. Este projeto demonstra minha habilidade em construir aplicações modernas, responsivas e centradas no usuário, evidenciando minha proficiência nas tecnologias mais recentes de desenvolvimento web.",
     "alt": "Uma aplicação web que utiliza React, Next.js e Tailwind CSS para simulações de ligas de futebol em tempo real."
   },

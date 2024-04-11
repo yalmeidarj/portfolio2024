@@ -1,30 +1,21 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
-const config: Config = {
+const config = {
+  darkMode: ["class"],
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
+  prefix: "",
   theme: {
-    screens: {
-      xs: "375px",
-      // => @media (min-width: 375px) { ... }
-
-      sm: "640px",
-      // => @media (min-width: 640px) { ... }
-
-      md: "900px",
-      // => @media (min-width: 768px) { ... }
-
-      lg: "1024px",
-      // => @media (min-width: 1024px) { ... }
-
-      xl: "1280px",
-      // => @media (min-width: 1280px) { ... }
-
-      "2xl": "1536px",
-      // => @media (min-width: 1536px) { ... }
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
     },
     extend: {
       backgroundImage: {
@@ -46,12 +37,12 @@ const config: Config = {
           text: "#2e4750",
           "text-dark": "#f0faf8",
           borderColor: "#019e75",
-
+  
           projectCardMix: "#042320",
           // projectCardMix: "#2e4750",
           projectCard: "#0c0b0b",
           // projectCard: "#2e4750",
-
+  
           "background-light": "#F5F5F5",
           "midBackground-light": "#FEFEFE",
           "text-light": "#333333",
@@ -61,63 +52,62 @@ const config: Config = {
           "borderColor-light": "#b48a09",
           "nav-light": "#e1d09c",
         },
-        // custom: {
-        //   primary: "#8BC6EC",
-        //   background: "#f0faf8",
-        //   "background-dark": "#292524",
-        //   midBackground: "#1e1b19",
-        //   black: "#0c0b0b",
-        //   // title: "#b48a09",
-        //   title: "#0f9486",
-        //   text: "#2e4750",
-        //   // primary: "#e8f8f5",
-        //   secondary: "#d1e0dc",
-        //   accent: "#ff9f1c",
-        //   light: "#f0faf8",
-        //   dark: "#000",
-        //   "text-primary": "#2e4750",
-        //   "text-secondary": "#547980",
-        //   "text-light": "#d1e0dc",
-        //   borderColor: "#019e75",
-        //   // borderColor: "#e4b142",
-        //   "border-secondary": "#a4bfb3",
-        // },
-      },
-      fontFamily: {
-        sans: ["Graphik", "sans-serif"],
-        serif: ["Merriweather", "serif"],
-      },
-      spacing: {
-        "dots-sm": "8px",
-        "dots-md": "12px",
-        "dots-lg": "16px",
-      },
-      patterns: {
-        "green-100": "#f0fdf4",
-        opacities: {
-          100: "1",
-          80: ".80",
-          60: ".60",
-          40: ".40",
-          20: ".20",
-          10: ".10",
-          5: ".05",
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
         },
-        sizes: {
-          1: "0.25rem",
-          2: "0.5rem",
-          4: "1rem",
-          6: "1.5rem",
-          8: "2rem",
-          16: "4rem",
-          20: "5rem",
-          24: "6rem",
-          32: "8rem",
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
         },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+      },
+      // borderRadius: {
+      //   lg: "var(--radius)",
+      //   md: "calc(var(--radius) - 2px)",
+      //   sm: "calc(var(--radius) - 4px)",
+      // },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
-  plugins: [require("tailwindcss-bg-patterns")],
-  darkMode: "class",
-};
-export default config;
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config;
+
+export default config

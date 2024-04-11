@@ -24,16 +24,19 @@
   },
   "project3": {
     "title": "Personal Portfolio",
+    "subHeading": "Professional showcase of my projects and skills",
     "description": "This portfolio website is a comprehensive showcase of my full-stack development skills, including proficiency in React, Node.js, Express, and MongoDB, among other technologies. Living in Toronto and being a self-taught developer, I've focused on demonstrating my backend expertise alongside a well-rounded web development skill set. The site itself is a testament to my ability to create engaging, user-friendly web applications, highlighting my journey, projects, and the technologies I excel in.",
     "alt": "An online portfolio showcasing the full-stack development capabilities and project work of Yuri Almeida, a developer passionate about backend technologies."
   },
   "project2": {
     "title": "Ymaa Desentupidora Website",
+    "subHeading": "Fully functional website for a local business",
     "description": "This project involved creating an engaging and accessible online presence for Ymaa Desentupidora, a plumbing service company in Rio de Janeiro. Utilizing my skills in web development, I designed and implemented a user-friendly website that highlights the company's services, including 24/7 emergency plumbing. The site is built with a focus on SEO optimization to ensure high visibility and customer engagement, demonstrating my proficiency in creating effective web solutions for business needs.",
     "alt": "A professional website for a plumbing service company, showcasing service offerings and contact information."
   },
   "project1": {
     "title": "League Simulator",
+    "subHeading": "View league standing outcomes as you simulate match results.",
     "description": "A cutting-edge web application showcasing my expertise in React, Next.js, and Tailwind CSS. It features dynamic API integration with API-Football from RapidAPI, providing real-time football league data. This project exemplifies my ability to build modern, responsive, and user-centric applications, demonstrating my proficiency in the latest web development technologies.",
     "alt": "A web application leveraging React, Next.js, and Tailwind CSS for real-time football league simulations."
   },
