@@ -4,6 +4,7 @@ import { SiGithub } from "react-icons/si";
 import { FaAnglesDown, FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Link from 'next/link';
+import NavItem from './NavItem';
 
 export default function AboutMe() {
     const t = useTranslations('aboutMe');
@@ -19,14 +20,18 @@ export default function AboutMe() {
             </div>
             <div className='flex flex-row w-full sm:w-auto justify-between items-center mb-12 sm:h-full self-start '>
                 <Socials />
-                <div className='w-16 h-18 visible sm:hidden text-white animate-pulse'>
-                    <a
-                        href="#myTechs"
-                        className='flex flex-col gap-2 items-center text-custom-borderColor-light dark:text-custom-borderColor text-center hover:text-custom-accent dark:hover:text-custom-accent transition-colors duration-150 hover:scale-110 transition-transform duration-300'
-                    >
-                        <FaAnglesDown className='font-semibold text-2xl dark:text-custom-nav-light text-custom-borderColor hover:text-custom-accent dark:hover:text-custom-accent transition-colors duration-300 hover:rotate-12' />
-                        View More
-                    </a>
+                <div className='w-16 h-16
+                 flex flex-col items-center justify-center gap-2                 
+                  visible sm:hidden text-white animate-pulse'
+                >
+                    <NavItem
+                        href='#myTechs'
+                        label={t('viewMoreButton').toUpperCase()}
+                        className='dark:text-custom-title text-custom-text-light
+                        flex flex-row justify-between
+                        text-center items-center gap-1 text-xs  '
+                    />
+                    <FaAnglesDown className='dark:text-custom-text-dark text-custom-title'/>
                 </div>
             </div>
         </div>

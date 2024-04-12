@@ -1,6 +1,9 @@
+
 import { useTranslations } from "next-intl";
+import NavItem from "./NavItem";
 
 export default function NavBar() {
+
     const t = useTranslations('navbar');
     return (
         <nav className='flex justify-around sm:justify-center  items-center w-full overflow-hidden h-14 dark:bg-opacity-95 bg-gradient-to-r from-custom-title to-custom-nav-light dark:bg-none dark:bg-custom-black border-b-2 border-solid border-b-custom-borderColor-light dark:border-b-custom-borderColor shadow-md '>
@@ -11,13 +14,4 @@ export default function NavBar() {
     );
 }
 
-function NavItem({ label, href }: { label: string, href: string }) {
-    return (
-        <a
-            href={href}
-            className='mx-4 font-bold dark:text-custom-text-accent text-white dark:hover:text-custom-text-dark hover:text-custom-text-accent-light transition ease-in-out delay-200'
-        >
-            {label.toUpperCase()}
-        </a>
-    );
-}
+

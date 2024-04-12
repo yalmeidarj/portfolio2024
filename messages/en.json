@@ -12,7 +12,8 @@
     "passion2": "Currently, I'm delving into Next.js 14 server actions, attracted by its capabilities to streamline backend processes and enhance user experiences through its novel server components.",
     "passion3": "Looking ahead, I'm looking forward to dive deeper into a low level language such as Go and I'm always excited about emerging technologies such as AI.",
     "name": "Yuri Almeida",
-    "location": "Toronto, Canada"
+    "location": "Toronto, Canada",
+    "viewMoreButton": "View More"
   },
   "intro": {
     "title": "Hello, I'm Yuri Almeida!",

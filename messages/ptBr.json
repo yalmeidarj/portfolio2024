@@ -12,7 +12,8 @@
     "skills": "Full Stack Development, Backend Development",
     "passion": "Bem-vindo ao meu portfólio! Meu nome é Yuri Almeida e eu sou um desenvolvedor Full Stack autodidata morando em Toronto. Sou apaixonado por toda a gama do desenvolvimento web, mas particularmente fascinado pelo Backend. Gosto de enfrentar desafios com positividade e determinação.  Entre em contato!",
     "name": "Yuri Almeida",
-    "location": "Toronto, Canadá"
+    "location": "Toronto, Canadá",
+    "viewMoreButton" : "Ver mais"
   },
   "intro": {
     "title": "Olá, me chamo Yuri Almeida!",
