@@ -45,7 +45,7 @@ function Socials() {
                 <FiExternalLink className=' hover:scale-110 hover:bg-transparent ' />
             </SocialIcon>
             <SocialIcon href="https://github.com/yalmeidarj">
-                <SiGithub className='transition-all duration-300 hover:text-title-accent-light dark:hover:text-title hover:scale-110' />
+                <SiGithub className='hover:text-title-accent-light dark:hover:text-title hover:scale-110' />
             </SocialIcon>
             {/* <SocialIcon href="#">
                 <FaLinkedin className='transition-all duration-300 hover:text-title-accent-light dark:hover:text-title hover:scale-110' />

@@ -20,7 +20,7 @@ export default function Home() {
   
   return (
 
-    <div className='transition ease-in-out delay-200 flex flex-col dark:bg-gradient-to-tl bg-custom-background-light dark:bg-custom-black  mx-auto scroll-smooth w-full sm:justify-between max-h-auto gap-8 items-center dark:text-custom-text-dark text-custom-text-light '>
+    <div className='transition ease-in-out delay-600 flex flex-col dark:bg-gradient-to-tl bg-custom-background-light dark:bg-custom-black  mx-auto scroll-smooth w-full sm:justify-between max-h-auto gap-8 items-center dark:text-custom-text-dark text-custom-text-light '>
       <div className=' sm:gap-8 h-auto min-h-screen sm:h-auto w-full  sm:mb-0  sm:min-h-0'>
         <div className='px-8 flex flex-col h-full sm:h-full sm:max-h-full '>
           <div id='aboutMe' className='flex flex-col items-end w-full'>

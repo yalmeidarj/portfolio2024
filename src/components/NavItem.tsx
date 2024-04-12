@@ -28,9 +28,6 @@ export default function NavItem({ label, href, className }: { label: string, hre
                 'dark:text-custom-text-accent',
                 'hover:text-custom-text-accent-light',
                 'dark:hover:text-custom-text-dark',
-                'transition',
-                'ease-in-out',
-                'delay-200',
                 className
             )}
         >
