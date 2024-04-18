@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { FiExternalLink } from "react-icons/fi";
 import { SiGithub } from "react-icons/si";
-import { FaAnglesDown, FaXTwitter } from "react-icons/fa6";
+import { FaAnglesDown, FaRegFilePdf, FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Link from 'next/link';
 import NavItem from './NavItem';
@@ -41,8 +41,10 @@ export default function AboutMe() {
 function Socials() {
     return (
         <div className='flex flex-row sm:flex-col text-2xl gap-6 text-text-accent-light dark:text-text-dark'>
-            <SocialIcon href="#">
-                <FiExternalLink className=' hover:scale-110 hover:bg-transparent ' />
+            <SocialIcon
+                href="Resume-Invisible.pdf"
+            >
+                <FaRegFilePdf className=' hover:scale-110 hover:bg-transparent ' />
             </SocialIcon>
             <SocialIcon href="https://github.com/yalmeidarj">
                 <SiGithub className='hover:text-title-accent-light dark:hover:text-title hover:scale-110' />

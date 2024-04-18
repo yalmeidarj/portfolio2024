@@ -58,7 +58,7 @@ export default function SortButton({ categories }: { categories: string[] }) {
             </div>
 
             {/* Technologies */}
-            <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-2"> 
+            <div className="max-w-6xl grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-2"> 
                 {filteredTechnologies.map((tech, index) => (
                     <div key={index} className="flex flex-col  items-center justify-center p-2 border-custom-borderColor-light text-custom-text-light  dark:text-custom-text-dark dark:border-custom-borderColor rounded-md shadow-sm">
                         <div className="text-2xl">{tech.icon}</div> 

@@ -25,13 +25,14 @@ export default function NavItem({ label, href, className }: { label: string, hre
                 'mx-4',
                 'font-bold',
                 'text-white',
+                'text-xs',
                 'dark:text-custom-text-accent',
                 'hover:text-custom-text-accent-light',
                 'dark:hover:text-custom-text-dark',
                 className
             )}
         >
-            {label.toUpperCase()}
+            {label}
         </Link>
     );
 }

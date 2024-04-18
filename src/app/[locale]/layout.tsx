@@ -28,7 +28,7 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="/profile1.png" />
       </Head>
-      <body className='scroll-smooth  '>
+      <body className='scroll-smooth'>
         <Toaster />
         <Providers>
           {children}

@@ -20,12 +20,21 @@ export default function Home() {
   
   return (
 
-    <div className='transition ease-in-out delay-600 flex flex-col dark:bg-gradient-to-tl bg-custom-background-light dark:bg-custom-black  mx-auto scroll-smooth w-full sm:justify-between max-h-auto gap-8 items-center dark:text-custom-text-dark text-custom-text-light '>
-      <div className=' sm:gap-8 h-auto min-h-screen sm:h-auto w-full  sm:mb-0  sm:min-h-0'>
-        <div className='px-8 flex flex-col h-full sm:h-full sm:max-h-full '>
-          <div id='aboutMe' className='flex flex-col items-end w-full'>
+    <div className='transition ease-in-out delay-600 flex flex-col   mx-auto scroll-smooth w-full sm:justify-between max-h-auto gap-2 items-center '>
+      <div className='dark:bg-custom-midBackground bg-custom-background-light
+       sm:gap-8 h-auto  sm:h-auto w-full  sm:mb-0  sm:min-h-0'>
+        <div className='sticky top-0 z-10 w-full overflow-visible dark:bg-custom-midBackground'>
+          <NavBar />
+        </div> 
+        <div className='dark:text-custom-text-dark text-custom-text-light 
+      dark:bg-gradient-to-tl bg-custom-background-light dark:bg-custom-black
+        flex flex-col sm:h-full sm:max-h-full px-8 '> 
+            <div
+            id='aboutMe'
+            className='flex flex-col min-h-screen sm:min-h-0 justify-center pb-12  items-start w-full'
+          >
+            <div className=' '>
             
-            <Controllers />   
             <h1 className="text-5xl font-extrabold self-start text-transparent bg-clip-text bg-gradient-to-r from-custom-text-accent to-custom-text-accent-light dark:from-custom-tittleDarker dark:to-custom-tittleLighter">
               Yuri Almeida
             </h1>
@@ -33,16 +42,16 @@ export default function Home() {
               Full Stack Software Developer
             </h2>
 
+            </div>
+                <AboutMe />
+
           </div>
-      
         </div>
-        <div className='flex flex-col px-8 mb-12 xs:mb-8 sm:mb-0 border-b border-solid border-gray-100 min-h-[640px] sm:min-h-[280px] h-5/5 sm:h-3/4'>
-          <AboutMe />
-        </div>      
-        <div className="bg-custom-background-light flex flex-col gap-4 mt-4 sm:mt-0 dark:bg-custom-midBackground ">
-          <div className='sticky top-0 z-10 w-full overflow-visible mb-6'>        
-            <NavBar />
-          </div>        
+ 
+        <div className="bg-custom-background-light flex flex-col gap-4 pt-4 sm:mt-0 dark:bg-custom-midBackground ">
+          <div className='w-full flex flex-col  sm:flex sm:flex-row justify-between '>
+          </div>
+          
           <Section id="myTechs">
             <MyTechs />
           </Section>
@@ -60,6 +69,7 @@ export default function Home() {
           </Section>
         </div>      
       <Footer />
+    
     </div>
     </div>
   );
@@ -67,7 +77,7 @@ export default function Home() {
 
 function Section({ id,  children}: { id: string,  children: React.ReactNode}) {
   return (
-    <section id={id} className='px-8 mt-4 gap-8 w-full'>
+    <section id={id} className='px-8 mt-4 gap-8 w-full '>
       {children}
     </section>
   )
