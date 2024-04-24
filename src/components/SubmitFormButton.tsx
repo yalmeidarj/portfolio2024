@@ -5,13 +5,23 @@ import { useFormStatus } from "react-dom";
 export default function SubmitFormButton({ title }: { title: string }) {
     const { pending } = useFormStatus();
     return (
-        <div className='shadow-md'>
+        <div className=''>
             <button
                 type="submit"
                 disabled={pending}
-                className={`bg-gradient-to-br from-custom-title to-custom-nav-light max-w-[180px] px-6 py-2 text-sm rounded-sm text-custom-text-dark transition duration-300 ease-in-out transform hover:scale-105 hover:bg-gradient-to-bl active:scale-95 active:bg-custom-midBackground shadow hover:shadow-lg ${pending ? "bg-custom-dark border-custom-border-primary text-custom-text-light" : "bg-custom-light border-custom-border-secondary text-custom-text-dark"} hover:bg-custom-accent hover:border-custom-border-primary hover:text-custom-text-light`}
+                className='flex flex-row gap-1 w-[8rem] px-4
+                    items-center justify-center my-4
+                    shadow-md shadow-gradient dark:shadow-gradient-dark dark:shadow-gradient-md from-custom-title
+                    to-custom-title-accent-light dark:from-custom-tittleDarker dark:to-custom-tittleLighter
+                    border border-custom-borderColor-light dark:border-custom-borderColor
+                    rounded-md py-2 bg-custom-background-light dark:bg-custom-background-dark
+                    text-custom-title dark:text-custom-text
+                    hover:text-custom-title-accent-light dark:hover:text-custom-title-accent'
             >
-                {pending ? "Pending..." : title}
+                <span
+                    className='font-bold text-custom-text dark:text-custom-text-dark'
+                >{pending ? "Pending..." : title}
+                </span>
             </button>
         </div>
     );

@@ -1,79 +1,56 @@
 import { useTranslations } from 'next-intl';
-import { FiExternalLink } from "react-icons/fi";
-import { SiGithub } from "react-icons/si";
-import { FaAnglesDown, FaRegFilePdf, FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import Link from 'next/link';
-import NavItem from './NavItem';
+import { FaAnglesDown } from "react-icons/fa6";
+import Socials from './Socials';
 
 export default function AboutMe() {
     const t = useTranslations('aboutMe');
     return (
-        <div className="flex flex-col sm:flex-row bg-transparent justify-between max-h-screen  h-full pt-6 gap-4 text-base leading-6 rounded-md w-full text-custom-text dark:text-custom-text-dark ">
-            <div className='w-sm text-custom-text dark:text-custom-text-dark'>
-                <div className='flex flex-col gap-2 '>
-                
-                <p className='text-left max-w-2xl leading-relaxed'>{t('passion')}</p>
-                <p className='text-left max-w-2xl leading-relaxed'>{t('passion2')}</p>
-                {/* <p className='text-left max-w-2xl leading-relaxed'>{t('passion3')}</p> */}
-                </div>
-            </div>
-            <div className='flex flex-row w-full sm:w-auto justify-between items-center mb-12 sm:h-full self-start '>
-                <Socials />
-                <div className='w-16 h-16
-                 flex flex-col items-center justify-center gap-2                 
-                  visible sm:hidden text-white animate-pulse'
-                >
-                    <NavItem
-                        href='#myTechs'
-                        label={t('viewMoreButton').toUpperCase()}
-                        className='dark:text-custom-title text-custom-text-light
-                        flex flex-row justify-between
-                        text-center items-center gap-1 text-xs  '
-                    />
-                    <FaAnglesDown className='dark:text-custom-text-dark text-custom-title'/>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-function Socials() {
-    return (
-        <div className='flex flex-row sm:flex-col text-2xl gap-6 text-text-accent-light dark:text-text-dark'>
-            <SocialIcon
-                href="Resume-Invisible.pdf"
-            >
-                <FaRegFilePdf className=' hover:scale-110 hover:bg-transparent ' />
-            </SocialIcon>
-            <SocialIcon href="https://github.com/yalmeidarj">
-                <SiGithub className='hover:text-title-accent-light dark:hover:text-title hover:scale-110' />
-            </SocialIcon>
-            {/* <SocialIcon href="#">
-                <FaLinkedin className='transition-all duration-300 hover:text-title-accent-light dark:hover:text-title hover:scale-110' />
-            </SocialIcon> */}
-        </div>
-    );
-}
-
-function SocialIcon({ children, href }: { children: React.ReactNode, href: string }) {
-    return (
-        <Link
-            href={href}
-            target='_blank'
-            className='rounded-xs group hover:bg-gradient-to-tr from-midTitle to-tittleLighter dark:hover:from-title dark:hover:to-tittleDarker  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-title-accent-light dark:focus:ring-title'>
-            <div
-                className='text-custom-borderColor-light dark:text-custom-tittleDarker
-            group-hover:scale-110 hover:text-custom-title
-            dark:hover:text-custom-nav-light
+        <div className="w-full mx-auto max-w-[1000px]
+        flex flex-coljustify-between  gap-6">
+        <div className=" 
+        flex flex-col justify-between h-full gap-4 text-base leading-6 rounded-md w-full text-custom-text dark:text-custom-text-dark items-start">
+            <div className='
+            flex flex-col justify-center sm:pt-14 pt-8
+            h-4/4
+            sm:justify-center
+            w-full 
+            w-sm text-custom-text dark:text-custom-text-dark
+            
             '>
-                {children}
+                <div className='flex flex-col gap-2 mb-8 sm:pt-4 '>
+                    <div className=' '>
+                        <h1 className="text-5xl font-extrabold self-start text-transparent bg-clip-text bg-gradient-to-r from-custom-text-accent to-custom-text-accent-light dark:from-custom-tittleDarker dark:to-custom-tittleLighter">
+                            Yuri Almeida
+                        </h1>
+                        <h2 className="mb-8 text-xl font-semibold self-start text-transparent bg-clip-text dark:bg-gradient-to-r bg-custom-tittleDarker dark:from-slate-200 dark:to-custom-title from-custom-text-accent-light to-custom-tittleDarker">
+                            Full Stack Software Developer
+                        </h2>
+                    </div>
+                    <p className='text-xl text-left max-w-6xl leading-normal'>{t('passion')}</p>
+                </div>
+
+                <a
+                    href='#form'
+                    className='flex flex-row gap-1 w-[8rem] px-4
+                    items-center justify-center
+                    my-4
+                    shadow-md shadow-gradient dark:shadow-gradient-dark dark:shadow-gradient-md from-custom-title
+                    to-custom-title-accent-light dark:from-custom-tittleDarker dark:to-custom-tittleLighter
+                    border border-custom-borderColor-light dark:border-custom-borderColor
+                    rounded-md py-2 bg-custom-background-light dark:bg-custom-background-dark
+                    text-custom-title dark:text-custom-text
+                    hover:text-custom-title-accent-light dark:hover:text-custom-title-accent'
+                    >
+                    <span
+                        className='font-bold text-custom-text dark:text-custom-text-dark'
+                    >{t('viewMoreButton')}</span>
+                        {/* <FiExternalLink className='text-custom-title dark:text-custom-tittleDarker' /> */}
+                    </a>
+                <Socials />
             </div>
-        </Link>
-        // hover:bg-gradient-to-tr hover:from-custom-title-accent-light dark:hover:from-custom-title 
+
+            </div>
+
+        </div>
     );
 }
-
-{/* <SocialIcon href="#">
-        <FaXTwitter className='transition-colors duration-300 hover:text-title-accent-light dark:hover:text-title' />
-    </SocialIcon> */}

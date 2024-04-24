@@ -87,5 +87,24 @@ html {
   .text-secondary {
     color: rgb(var(--secondary-color));
   }
+
+  .shadow-gradient {
+    --shadow-color1: #0f9486;
+    --shadow-color2: #ffa414;
+    --shadow-color3: #ffff;
+    --shadow-strength: 9px;
+    box-shadow: 6px 0px var(--shadow-strength) var(--shadow-color1),
+                6px 0px var(--shadow-strength) var(--shadow-color2),
+                6px 0px var(--shadow-strength) var(--shadow-color3);
+  }
+  .shadow-gradient-dark {
+    --shadow-color2: #0f9486;
+    --shadow-color1: #ffa414;
+    --shadow-color3: #ffff;
+    --shadow-strength: 9px;
+    box-shadow: 6px 0px var(--shadow-strength) var(--shadow-color1),
+                6px 0px var(--shadow-strength) var(--shadow-color2),
+                6px 0px var(--shadow-strength) var(--shadow-color3);
+  }
 }
 

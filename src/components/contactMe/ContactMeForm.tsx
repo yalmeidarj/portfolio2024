@@ -51,10 +51,10 @@ export default function ContactMeForm({
     }
     
     return (                
-        <div className='mx-auto w-full max-w-lg sm:dark:bg-gradient-to-br md:dark:from-custom-midBackground md:dark:to-custom-black mb-12 md:mb-16  rounded-md flex py-4'>        
+        <div className='w-full justify-start sm:dark:bg-gradient-to-br  mb-12 md:mb-16  rounded-md flex py-4'>        
             <form                
                 ref={ref}
-                className="flex w-full flex-col mx-auto py-2 gap-4"
+                className="flex w-full flex-col  justify-start py-2 gap-4"
                 action={async (formData) => {
                 const result = await clientAction(formData);
                 if (result !== false) {

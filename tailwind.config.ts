@@ -11,8 +11,11 @@ const config = {
   prefix: "",
   theme: {
     container: {
-      center: true,
-      padding: "2rem",
+      center: false,
+      padding: {
+        right: "3rem", // For right side
+        left: "3rem", // For left side
+      },
       screens: {
         "2xl": "1400px",
       },
@@ -37,12 +40,12 @@ const config = {
           text: "#2e4750",
           "text-dark": "#f0faf8",
           borderColor: "#019e75",
-  
+
           projectCardMix: "#042320",
           // projectCardMix: "#2e4750",
           projectCard: "#0c0b0b",
           // projectCard: "#2e4750",
-  
+
           "background-light": "#F5F5F5",
           "midBackground-light": "#FEFEFE",
           "text-light": "#333333",

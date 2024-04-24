@@ -26,17 +26,20 @@ export function ProjectCard({ project }: ProjectProps) {
 
     return (
         <Drawer>
-                <div className="project-card drop-shadow-md">
+                <div className="project-card drop-shadow-md ">
                 <DrawerTrigger>
-                    <div className='relative '>                    
-                        <Image
-                            src={imgSrc}
-                            alt={alt}
-                            width={300}
-                            height={200}
-                            className='rounded-md max-w-[600px]'
-                            layout="responsive"
-                        />
+                    
+                    <div className='rounded-lg dark:border-custom-title border-2 border-custom-nav-light 
+                    relative min-w-[400px] h-2/3 aspect-w-3 aspect-h-2 overflow-hidden'>
+                            <Image
+                                src={imgSrc}
+                                alt={alt}
+                                width={300}
+                                height={200}
+                            className='self-start rounded-md max-w-[400px] max-h-[300px] sm:max-h-[200px]  object-cover '
+                                layout="responsive"
+                            />
+                    
                         <div className='w-full absolute p-4 bottom-0 
                         bg-gradient-to-bl from-transparent to-black
                         flex flex-row gap-0 justify-between items-center

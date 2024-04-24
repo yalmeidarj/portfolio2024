@@ -6,7 +6,7 @@ export default function TechSkills() {
 
     const categories = [t('all'), t('development'), t('design'), t('tools')];
     return (
-        <>
+        < >
         <SortButton
             categories={categories}
             />

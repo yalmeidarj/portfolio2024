@@ -14,7 +14,7 @@ export default function FormFields({ props }: FieldsProps) {
     
   return (
     <div className='w-full flex flex-col gap-4 '>
-      <div className='w-full flex flex-col sm:flex-row gap-2'>      
+      <div id='form' className='w-full flex flex-col sm:flex-row gap-2'>      
       <InputType
         type="text"
         name="name"

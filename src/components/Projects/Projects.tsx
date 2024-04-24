@@ -9,10 +9,9 @@ export function Projects() {
     const projects: ProjectCardProps[] = ProjectsData();
 
     return (
-        <div className='flex flex-col gap-6 items-center w-full justify-center dark:text-custom-text-dark text-custom-text-light text-textColor-light dark:text-textColor-dark mt-4'>
-            <h1 className='self-start text-xl font-semibold'>{t('title')}</h1>
-            {/* <h1>{t('Projects')}</h1> */}
-            <div className='grid gird-cols-1 justify-evenly w-full  md:grid md:grid-cols-2 gap-4 '>
+        <div className='mx-auto max-w-[1000px] flex flex-col gap-6 items-center w-full justify-center dark:text-custom-text-dark text-custom-text-light text-textColor-light dark:text-textColor-dark mt-4'>
+            <h1 className='self-start text-xl font-semibold'>{t('title')}</h1>            
+            <div className='justify-between w-full flex flex-col sm:flex sm:flex-row sm:flex-wrap items-center gap-2 '>
                 {projects.map((project: ProjectCardProps, index: number) => (
                     <ProjectCard key={index} project={project} />
                 ))}

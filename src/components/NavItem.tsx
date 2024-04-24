@@ -21,8 +21,7 @@ export default function NavItem({ label, href, className }: { label: string, hre
             ref={targetRef}
             href={href}
             onClick={handleOnClick}
-            className={cn(
-                'mx-4',
+            className={cn(                
                 'font-bold',
                 'text-white',
                 'text-xs',

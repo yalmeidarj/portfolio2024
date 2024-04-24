@@ -5,6 +5,8 @@ import { Providers } from "../providers";
 import { Toaster } from 'react-hot-toast'
 import { Analytics } from '@vercel/analytics/react';
 import Head from "next/head";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -31,8 +33,10 @@ export default function RootLayout({
       <body className='scroll-smooth'>
         <Toaster />
         <Providers>
+          <NavBar />
           {children}
         </Providers>
+        <Footer />
         <Analytics />
       </body>
     </html>

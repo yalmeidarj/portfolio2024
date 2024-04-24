@@ -6,14 +6,16 @@
     "passionLabel": "Um pouco sobre mim:",
     "resumeLabel": "Currículo",
     "resume": "Ver PDF",
+    "passion": "Um desenvolvedor web dedicado e focado no ecosistema React. No momento, explorando as novidades do Next.js 14",
+
     "passion2": "Atualmente, estou me aprofundando nas ações de servidor do Next.js 14, atraído por suas capacidades de otimizar processos de backend e melhorar a experiência do usuário por meio de seus novos componentes de servidor.",
     "passion3": "Olhando para frente, estou ansioso para mergulhar mais fundo em uma linguagem de baixo nível como Go e sempre me empolgo com tecnologias emergentes como IA.",
     "skillsLabel": "Habilidades",
     "skills": "Full Stack Development, Backend Development",
-    "passion": "Bem-vindo ao meu portfólio! Meu nome é Yuri Almeida e eu sou um desenvolvedor Full Stack autodidata morando em Toronto. Sou apaixonado por toda a gama do desenvolvimento web, mas particularmente fascinado pelo Backend. Gosto de enfrentar desafios com positividade e determinação.  Entre em contato!",
+
     "name": "Yuri Almeida",
     "location": "Toronto, Canadá",
-    "viewMoreButton" : "Ver mais"
+    "viewMoreButton": "Fale comigo"
   },
   "intro": {
     "title": "Olá, me chamo Yuri Almeida!",
